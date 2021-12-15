@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline:none;
+}*
+body {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande"; 
+    background: rgb(233, 231, 250);
+    background-size: cover;
+    overflow-x: hidden;
+ }
+
+.dcontainer{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    min-height:  50px;
+    position: fixed;
+    /*z-index: 300;*/
+}
+    
+.link{
+    
+text-decoration: none;
+padding: 0.5rem 2.5rem;
+
+}
+    
+a.link:hover{
+border-bottom:1px solid #d8e3e7;
+}
+    
+.navigation .link-active{
+border-bottom:1px solid #d8e3e7;
+font-weight: bolder;
+}
+    
+.list-item-inline{
+display:block;
+line-height:50px ;
+
+float: left;
+text-align: center;
+}
+    
+.list-non-bullet{
+list-style: none;
+padding-left:15px;
+display: block;
+text-align: center;
+}
+    
+.navigation{
+    background-color: #7415cc;
+    height:50px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+    
+.navigation .nav-brand{
+font-weight:bold;
+font-size: 25px;
+line-height: 50px;
+color: #eaeff3;
+/*padding: 0 105px;*/
+}
+    
+.navigation .nav-pills{
+float: right;
+display: block;
+text-align: center;
+}
+    
+.navigation .link{
+        color:#fffdfd;
+}
+
+.container-body
+{
+   padding-top: 120px;
+   padding-left: 25%;
+}
+
+.container{
+    text-align:center;
+    font-size: larger;
+    float: left;
+    height: auto;
+    width: 800px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 0.7rem;
+    position: relative;
+    margin:0 auto;
+}
+table.bill{
+    text-align: left;
+    padding-top:45px;
+    padding-left: 35px;
+    font-weight: normal;
+    border-spacing: 30px;
+    
+}.btn-proceed
+{
+    width: 250px;
+    position: relative;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgba(124, 100, 231, 0.897);  
+    
+    box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, .1);
+    border: none;
+    border-radius: 10px;
+    
+}
+.btn{
+    padding:10px;
+}
+.bill-conc{
+    padding: 10px;
+}
+.btn-proceed:hover{
+    background-color: #7415cc;
+    cursor:pointer;
+    }
+
+@media(max-width: 767px) {
+    .nav-pills{
+      float: none;
+      width: 100%;
+    }
+    .navigation{
+        height: auto;
+        text-align: center;
+    }
+    .list-item-inline{
+        float:none;
+        }
+        .container{
+            width:400px;
+            padding: 15px;
+        }
+.container-body
+{
+   padding-top: 200px;
+   
+}
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    .container{
+        
+        width: 600px;
+        padding: 15px;
+        
+    }
+   
+}
+.parent{
+    display:flex;
+    padding-top: 100px;
+}
+.child-container{
+    text-align:center;
+    font-size: larger;
+    float: left;
+    height: auto;
+    width: 800px;
+    background-color: rgb(244, 242, 248);
+    padding: 15px;
+    border-radius: 0.7rem;
+    position: relative;
+    margin:0 auto;
+}
+.tablist{
+    padding:5px;
+}
+.tabs{
+    display:inline-block;
+    padding:35px;
+    word-spacing: 5px;
+}
+.tab-btn{
+    
+    padding:5px;
+    border-radius: 0.7rem;
+    background-color: #f6fafc;
+}
+.tab-active{
+    background: #7415cc;
+    color: #fffdfd;
+    font-weight: bolder;
+}
+a.tab-btn:hover{
+    cursor: pointer;
+}
+
+.form{
+    text-align:left;
+    font-size: larger;
+    height: auto;
+    width: auto;
+    background-color: rgb(244, 242, 248);
+    padding-top: 5px;
+    padding-left:55px;
+    border-radius: 0.7rem;
+    position: relative;
+    margin:0 auto;
+}
+.form-group{
+    height: 45px;
+    width: 430px;
+    margin: 45px 0;
+    position: relative;
+    display: absolute;
+}
+.form-group .title{
+    padding:none;
+}
+.form-group .title{
+    padding:none;
+}
