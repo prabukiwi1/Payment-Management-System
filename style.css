@@ -221,7 +221,8 @@ a.tab-btn:hover{
 }
 .form-group .title{
     padding:none;
+    font-weight:lighter;
 }
-.form-group .title{
-    padding:none;
+.input-group{
+    padding:5px;
 }

@@ -29,30 +29,39 @@
                 <div class="tabs"><a class="tab-btn" >Net Banking</a> </div>
                 <div class="tabs"><a class="tab-btn" >UPI Payment</a> </div>
             </div>
-
+            <div class="credit-cards" style="text-align: center; width: 100%">
+                <img height="40" src="https://shoplineimg.com/assets/footer/card_visa.png"/>
+                <img height="40" src="https://shoplineimg.com/assets/footer/card_master.png"/>
+                <img height="40" src="https://shoplineimg.com/assets/footer/card_paypal.png"/>
+                <img height="40" src="https://shoplineimg.com/assets/footer/card_unionpay.png"/>
+                <img height="40" src="https://shoplineimg.com/assets/footer/card_linepay.png"/>
+                <img height="40" src="https://shoplineimg.com/assets/footer/card_tw_711_pay.png"/>
+                <img height="40" src="https://shoplineimg.com/assets/footer/card_tw_fm_pay.png"/>
+                <img height="40" src="https://shoplineimg.com/assets/footer/card_taishin.png"/>
+              </div>
             <form class="form">
                 <div class="form-group"> <label class="title">
                         <h6>Card Owner</h6>
-                    </label> <input type="text" name="username" placeholder="Card Owner Name" required class="form-control "> 
+                    </label> <input type="text" name="username" placeholder="Card Owner Name" required class="input-group "> 
                 </div>
                 <div class="form-group"> <label class="title">
                         <h6>Card number</h6>
                     </label>
-                    <input class="input-group"> <input type="text" name="cardNumber" placeholder="Valid card number" class="form-control " required>
+                    <input class="input-group" placeholder="Card Number">
                     </input>
                 </div>
                 <div class="form-group"> <label><span class="hidden-xs">
-                                    <h6>Expiration Date</h6>
+                    <h6>Expiration Date</h6>
                                 </span></label>
-                            <div class="input-group"> 
-                                <input type="number" placeholder="MM" name="" class="form-control" required> <input type="number" placeholder="YY" name="" class="form-control" required> 
-                            </div>
+                <div > 
+                    <input class="input-group" type="number" placeholder="MM"  required> <input type="number" placeholder="YY" name="" class="input-group" required> 
                 </div>
-                <div class="form-group mb-4"> <label title="Three digit CV code on the back of your card">
-                                <h6>CVV <i class="question-circle d-inline"></i></h6>
-                            </label> <input type="text" required class="form-control"> 
                 </div>
-                <div class="card-footer"> <button type="button"> Confirm Payment </button>
+                <div class="form-group"> <label title="Three digit CV code on the back of your card">
+                                <h6>CVV</h6>
+                            </label> <input type="text" required class="input-group" placeholder="Enter CVV"> 
+                </div>
+                <div class="card-footer"> <button type="button" class="btn-proceed"> Confirm Payment </button>
                 </div>
             </form>
         </div>
