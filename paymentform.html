@@ -1,70 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
     <title>Document</title>
 </head>
+
 <body>
-    <nav class="navigation dcontainer">
-        <label class="nav-brand">LOGO</label>
-        <ul class="list-non-bullet nav-pills">
-            <li class="list-item-inline">
-                <a class="link link-active" href="">Home</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="">Login</a>
-            </li>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Logo</label>
+        <ul class="navbar">
+          <li><a class="" href="start.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Community Forum</a></li>
+          <li><a href="#">Login</a></li>
         </ul>
     </nav>
     <div class="parent">
         <div class="child-container">
             <h2>Payment Options</h2>
             <div class="tablist">
-                <div class="tabs"><a class="tab-btn tab-active" >Credit Card</a> </div>
-                <div class="tabs"><a class="tab-btn" >Debit Card</a></div>
-                <div class="tabs"><a class="tab-btn" >Net Banking</a> </div>
-                <div class="tabs"><a class="tab-btn" >UPI Payment</a> </div>
+                <div class="tabs"><a data-toggle="tab" class="tab-btn" href="#tab1">Credit Card</a> </div>
+                <div class="tabs"><a data-toggle="tab" class="tab-btn" href="#tab2">Debit Card</a></div>
+                <div class="tabs"><a data-toggle="tab" class="tab-btn" href="#tab3">Net Banking</a> </div>
+                <div class="tabs"><a data-toggle="tab" class="tab-btn" href="#tab4">UPI Payment</a> </div>
             </div>
             <div class="credit-cards" style="text-align: center; width: 100%">
-                <img height="40" src="https://shoplineimg.com/assets/footer/card_visa.png"/>
-                <img height="40" src="https://shoplineimg.com/assets/footer/card_master.png"/>
-                <img height="40" src="https://shoplineimg.com/assets/footer/card_paypal.png"/>
-                <img height="40" src="https://shoplineimg.com/assets/footer/card_unionpay.png"/>
-                <img height="40" src="https://shoplineimg.com/assets/footer/card_linepay.png"/>
-                <img height="40" src="https://shoplineimg.com/assets/footer/card_tw_711_pay.png"/>
-                <img height="40" src="https://shoplineimg.com/assets/footer/card_tw_fm_pay.png"/>
-                <img height="40" src="https://shoplineimg.com/assets/footer/card_taishin.png"/>
-              </div>
-            <form class="form">
+                <img height="40" src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" />
+                <img height="40" src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Bitcoin_logo.svg" />
+                <img height="40"
+                    src="https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg" />
+                <img height="40" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Visa_2021.svg" />
+                <img height="40" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" />
+                <img height="40" src="https://shoplineimg.com/assets/footer/card_tw_711_pay.png" />
+                <img height="40" src="https://shoplineimg.com/assets/footer/card_tw_fm_pay.png" />
+            </div>
+            <!-- Credit Cards tab-->
+            <form class="form" id="tab1">
                 <div class="form-group"> <label class="title">
                         <h6>Card Owner</h6>
-                    </label> <input type="text" name="username" placeholder="Card Owner Name" required class="input-group "> 
+                    </label> <input type="text" name="username" placeholder="Card Owner Name" required
+                        class="input-group ">
                 </div>
                 <div class="form-group"> <label class="title">
-                        <h6>Card number</h6>
+                        <h6>Credit Card number</h6>
                     </label>
                     <input class="input-group" placeholder="Card Number">
                     </input>
                 </div>
                 <div class="form-group"> <label><span class="hidden-xs">
-                    <h6>Expiration Date</h6>
-                                </span></label>
-                <div > 
-                    <input class="input-group" type="number" placeholder="MM"  required> <input type="number" placeholder="YY" name="" class="input-group" required> 
-                </div>
+                            <h6>Expiration Date</h6>
+                        </span></label>
+                    <div>
+                        <input class="input-group" type="number" placeholder="MM" required> <input type="number"
+                            placeholder="YY" name="" class="input-group" required>
+                    </div>
                 </div>
                 <div class="form-group"> <label title="Three digit CV code on the back of your card">
-                                <h6>CVV</h6>
-                            </label> <input type="text" required class="input-group" placeholder="Enter CVV"> 
+                        <h6>CVV</h6>
+                    </label> <input type="text" required class="input-group" placeholder="Enter CVV">
                 </div>
-                <div class="card-footer"> <button type="button" class="btn-proceed"> Confirm Payment </button>
+                <div class="card-footer">
+                    <button type="button" class="btn-proceed" onclick="window.location.href='/index.html'"> back
+                    </button>
+                    <button type="button" class="btn-proceed"> Confirm Payment </button>
+
+                </div>
+            </form>
+            <!-- Debit Card-->
+            <form class="form" id="tab2">
+                <div class="form-group"> <label class="title">
+                        <h6>Card Owner</h6>
+                    </label> <input type="text" name="username" placeholder="Card Owner Name" required
+                        class="input-group ">
+                </div>
+                <div class="form-group"> <label class="title">
+                        <h6>Debit Card number</h6>
+                    </label>
+                    <input class="input-group" placeholder="Card Number">
+                    </input>
+                </div>
+                <div class="form-group"> <label><span class="hidden-xs">
+                            <h6>Expiration Date</h6>
+                        </span></label>
+                    <div>
+                        <input class="input-group" type="number" placeholder="MM" required> <input type="number"
+                            placeholder="YY" name="" class="input-group" required>
+                    </div>
+                </div>
+                <div class="form-group"> <label title="Three digit CV code on the back of your card">
+                        <h6>CVV</h6>
+                    </label> <input type="text" required class="input-group" placeholder="Enter CVV">
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn-proceed" onclick="window.location.href='/index.html'"> back
+                    </button>
+                    <button type="button" class="btn-proceed"> Confirm Payment </button>
+
+                </div>
+            </form>
+            <!--netbanking-->
+            <form id="tab3" class="form">
+                <div class="form-group "> <label for="Select Your Bank">
+                        <h6>Select your Bank</h6>
+                    </label> <select class="input-group" id="ccmonth">
+                        <option value="" selected disabled>--Please select your Bank--</option>
+                        <option>Bank 1</option>
+                        <option>Bank 2</option>
+                        <option>Bank 3</option>
+                        <option>Bank 4</option>
+                        <option>Bank 5</option>
+                        <option>Bank 6</option>
+                        <option>Bank 7</option>
+                        <option>Bank 8</option>
+                        <option>Bank 9</option>
+                        <option>Bank 10</option>
+                    </select> </div>
+                <div class="form-group">
+                    <p> <button type="button" class="btn-proceed "><i class="fas fa-mobile-alt mr-2"></i> Proceed
+                            Payment</button> </p>
+                </div>
+                <p class="text-muted">Note: After clicking on the button, you will be directed to a secure gateway for
+                    payment. After completing the payment process, you will be redirected back to the website to view
+                    details of your order. </p>
+            </form> <!-- End -->
+            <!--UPI Payments-->
+            <!--<form id="tab4" class="form">
+                <div class="form-group "> <label for="Select Your Bank">
+                        <h6>Select any one UPI services</h6>
+                    </label>
+                    <div class="form-group">
+                        <input type="radio" id="Gpay" name="drone" class="input-group" value="Gpay" checked>
+                        <label for="Gpay">Gpay</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" id="PhonePe" class="input-group" name="drone" value="PhonePe">
+                        <label for="PhonePe">PhonePe</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" id="Paytm" name="drone" value="Paytm">
+                        <label for="Paytm">Paytm</label>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p> <button type="button" class="btn-proceed "><i class="fas fa-mobile-alt mr-2"></i> Proceed
+                            Payment</button> </p>
+                </div>
+            </form>--> <!-- End -->
+            <form class="form" id="tab4">
+                <div class="form-group"> 
+                    <input type="radio" id="Gpay" value="Gpay" name="payment-opt"
+                        class="input-group "> <label for="Gpay">Gpay</label>
+                </div>
+                <div class="form-group"> 
+                    <input type="radio" id="PhonePe" value="PhonePe" name="payment-opt" class="input-group">
+                    <label for="PhonePe">PhonePe</label>
+                </div>
+                <div class="form-group"> 
+                    <div>
+                        <input class="input-group" type="radio" id="Paytm" name="payment-opt" value="Paytm"> 
+                        <label for="Paytm">Paytm</label>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn-proceed" onclick="window.location.href='/index.html'"> back
+                    </button>
+                    <button type="button" class="btn-proceed"> Confirm Payment </button>
+
                 </div>
             </form>
         </div>
-    </div>
+        
 </body>
+
 </html>

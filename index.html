@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <title>Payment</title>
 </head>
 <body>
-    <nav class="navigation dcontainer">
-        <label class="nav-brand">LOGO</label>
-        <ul class="list-non-bullet nav-pills">
-            <li class="list-item-inline">
-                <a class="link link-active" href="">Home</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="">Login</a>
-            </li>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Logo</label>
+        <ul class="navbar">
+          <li><a class="" href="start.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Community Forum</a></li>
+          <li><a href="#">Login</a></li>
         </ul>
     </nav>
-
-    <div class="container-body">
-        <div class="container">
+    <div class="icontainer-body">
+        <div class="icontainer">
             <strong style="font-size: larger;">
                 Payment details
             </strong>
@@ -43,15 +45,12 @@
                 </tr>
             </table>
             <label class="bill-conc">The total payable amount is :</label>
-            <div class="btn" >
-                <button class="btn-proceed" onclick="window.location.href='/paymentform.html'">
-                     Proceed
-                </button>
-            </div>
         </div>
-        
-        
-
+    </div>
+    <div class="ibtn" >
+        <button class="btn-proceed" onclick="window.location.href='/paymentform.html'">
+             Proceed
+        </button>
     </div>
 </body>
 </html>

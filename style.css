@@ -13,7 +13,10 @@ body {
     background-size: cover;
     overflow-x: hidden;
  }
-
+ .responsive {
+    width: 100%;
+    height: auto;
+}
 .dcontainer{
     padding-left: 1rem;
     padding-right: 1rem;
@@ -81,11 +84,11 @@ text-align: center;
 
 .container-body
 {
-   padding-top: 120px;
-   padding-left: 25%;
+    display:flex;
+    padding-top: 100px;
 }
 
-.container{
+.icontainer{
     text-align:center;
     font-size: larger;
     float: left;
@@ -94,7 +97,7 @@ text-align: center;
     background-color: rgb(255, 255, 255);
     padding: 15px;
     border-radius: 0.7rem;
-    position: relative;
+    position:relative;
     margin:0 auto;
 }
 table.bill{
@@ -106,13 +109,14 @@ table.bill{
     
 }.btn-proceed
 {
-    width: 250px;
+    width: 150px;
     position: relative;
     height: 30px;
     font-size: 15px;
     font-weight: bold;
     color: rgb(255, 255, 255);
     background-color: rgba(124, 100, 231, 0.897);  
+    margin-left: 25px;
     
     box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, .1);
     border: none;
@@ -157,7 +161,7 @@ table.bill{
         
         width: 600px;
         padding: 15px;
-        
+
     }
    
 }
@@ -174,7 +178,6 @@ table.bill{
     background-color: rgb(244, 242, 248);
     padding: 15px;
     border-radius: 0.7rem;
-    position: relative;
     margin:0 auto;
 }
 .tablist{
@@ -190,6 +193,7 @@ table.bill{
     padding:5px;
     border-radius: 0.7rem;
     background-color: #f6fafc;
+    text-decoration: none;
 }
 .tab-active{
     background: #7415cc;
@@ -198,25 +202,29 @@ table.bill{
 }
 a.tab-btn:hover{
     cursor: pointer;
+    text-decoration: none;
 }
 
 .form{
     text-align:left;
     font-size: larger;
     height: auto;
+    display:block;
     width: auto;
     background-color: rgb(244, 242, 248);
     padding-top: 5px;
-    padding-left:55px;
+    padding-left:105px;
     border-radius: 0.7rem;
-    position: relative;
+    position: static;
     margin:0 auto;
+    display: block;
+    overflow: hidden;
 }
 .form-group{
     height: 45px;
     width: 430px;
-    margin: 45px 0;
-    position: relative;
+    margin: 35px 0;
+    position: static;
     display: absolute;
 }
 .form-group .title{
@@ -226,3 +234,18 @@ a.tab-btn:hover{
 .input-group{
     padding:5px;
 }
+.card-footer{
+    padding-left:15px;
+
+}
+
+.form:not(:target) {
+    display: none;
+  }
+  
+.form:target {
+    display: block;
+  }
+
+
+
