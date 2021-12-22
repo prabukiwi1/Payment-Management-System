@@ -171,6 +171,11 @@ table.bill{
     height: auto;
     z-index: -1%;
 }
+.embeded-img{
+  height: auto;
+  margin: 15px auto;
+  display: block;
+}
 
 
 .container {
