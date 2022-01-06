@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.example.org/paymentschema" 
+xmlns:tns="http://www.example.org/paymentschema" 
+elementFormDefault="qualified">
+
+<complexType name="order-list">
+	<sequence>
+		<element name="order-items" type="tns:items" minOccurs="1" maxOccurs="unbounded"></element>
+	</sequence>
+</complexType>
+<complexType name="items">
+	<sequence>
+		<element name="details" type="string"></element>
+		<element name="quantity" type="integer"></element>
+		<element name="price" type="tns:amount"></element>
+		<element name="payment-status" type="tns:paystring"></element>
+		<element name="duration" type="integer"></element>
+		<element name="date" type="date"></element>
+	</sequence>
+	<attribute name="item-id" type="ID" use="required"></attribute>
+</complexType>
+<simpleType name="paystring">
+	<restriction base="string">
+		<pattern value="pending|success"/>
+	</restriction>
+</simpleType>
+<simpleType name="amount">
+	<restriction base="integer">
+		<minInclusive value="0"></minInclusive>
+	</restriction>
+</simpleType>
+<element name="global" type="tns:order-list"></element>
+</schema>

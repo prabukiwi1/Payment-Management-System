@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.example.org/sample" 
+xmlns:py="http://www.example.org/sample" 
+elementFormDefault="qualified">
+<element name="checkout-details" type="py:order-list"></element>
+<complexType name="order-list">
+<sequence>
+<element name="order-items" type="py:items" minOccurs="1" maxOccurs="unbounded"></element>
+</sequence>
+</complexType>
+<complexType name="items">
+<sequence>
+<element name="Details" type="string"></element>
+<element name="Quantity" type="integer"></element>
+<element name="Price" type="py:amount"></element>
+<element name="Payment-status" type="string"></element>
+<element name="Duration" type="integer"></element>
+<element name="" type=""></element>
+</sequence>
+<attribute name="item-id" type="ID" use="required"></attribute>
+</complexType>
+<simpleType name="amount">
+<restriction base="integer">
+<minInclusive value="0"></minInclusive>
+</restriction>
+</simpleType>
+</schema>

@@ -332,7 +332,7 @@ table.bill{
   text-decoration: none;
 }
 .tab-active{
-  background: #7415cc;
+  background: #6faaf7;
   color: #fffdfd;
   font-weight: bolder;
 }
@@ -363,12 +363,32 @@ a.tab-btn:hover{
   position: static;
   display: absolute;
 }
+.radioform-group{
+  height: 45px;
+  width: 430px;
+  margin: 35px 0;
+  position: static;
+  display: absolute;
+
+  border:1px solid #5dcafd;
+  border-radius: 7px;
+  align-items: center;
+}
+.radioform-group:hover {
+  -webkit-box-shadow: 0px 3px 5px 0px #e8e8e8;
+  box-shadow: 0px 3px 5px 0px #e8e8e8;
+}
 .form-group .title{
   padding:none;
   font-weight:lighter;
 }
 .input-group{
   padding:5px;
+  
+}
+.radioinput-group{
+  margin: 10px;
+  
 }
 .card-footer{
   padding-left:15px;
@@ -497,5 +517,31 @@ a.tab-btn:hover{
   }
   100% {
     background-positon-x: 0px;
+  }
+}
+
+@media (max-width:830px) and (min-width:600px){
+  .child-container{
+    width: 400px;
+  } 
+  .radioform-group{
+    width: auto;
+    margin-left: 20px;
+  }
+  .form{
+    padding: 1px;
+  }
+}
+
+@media (max-width:400px) and (min-width:200px){
+  .child-container{
+    width: 280px;
+  } 
+  .radioform-group{
+    width: auto;
+    margin-left: 20px;
+  }
+  .form{
+    padding: 1px;
   }
 }

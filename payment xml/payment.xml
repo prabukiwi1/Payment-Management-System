@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:global xmlns:tns="http://www.example.org/paymentschema" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.example.org/paymentschema paymentschema.xsd ">
+ <tns:order-items item-id="id0">
+    <tns:details>Consultation Fees</tns:details>
+    <tns:quantity>1</tns:quantity>
+    <tns:price>15</tns:price>
+    <tns:payment-status>pending</tns:payment-status>
+    <tns:duration>2</tns:duration>
+    <tns:date>2021-05-22</tns:date>
+  </tns:order-items>
+  
+  <tns:order-items item-id="id1">
+    <tns:details>Elite_Subcription</tns:details>
+    <tns:quantity>1</tns:quantity>
+    <tns:price>299</tns:price>
+    <tns:payment-status>pending</tns:payment-status>
+    <tns:duration>365</tns:duration>
+    <tns:date>2022-01-04</tns:date>
+  </tns:order-items>
+  
+  <tns:order-items item-id="id2">
+    <tns:details>Standard Subscription for E-course</tns:details>
+    <tns:quantity>1</tns:quantity>
+    <tns:price>99</tns:price>
+    <tns:payment-status>success</tns:payment-status>
+    <tns:duration>45</tns:duration>
+    <tns:date>2021-06-18</tns:date>
+  </tns:order-items>
+  
+  <tns:order-items item-id="id3">
+    <tns:details>Consultation Fees</tns:details>
+    <tns:quantity>1</tns:quantity>
+    <tns:price>150</tns:price>
+    <tns:payment-status>pending</tns:payment-status>
+    <tns:duration>5</tns:duration>
+    <tns:date>2022-02-07</tns:date>
+  </tns:order-items>
+  
+  <tns:order-items item-id="id4">
+    <tns:details>Consultation Fees</tns:details>
+    <tns:quantity>1</tns:quantity>
+    <tns:price>15</tns:price>
+    <tns:payment-status>pending</tns:payment-status>
+    <tns:duration>45</tns:duration>
+    <tns:date>2021-08-26</tns:date>
+  </tns:order-items>
+  
+  <tns:order-items item-id="id5">
+    <tns:details>Mind Map 2022 </tns:details>
+    <tns:quantity>1</tns:quantity>
+    <tns:price>49</tns:price>
+    <tns:payment-status>pending</tns:payment-status>
+    <tns:duration>180</tns:duration>
+    <tns:date>2021-12-12</tns:date>
+  </tns:order-items>
+  
+  <tns:order-items item-id="id6">
+    <tns:details>Consultation Fees</tns:details>
+    <tns:quantity>1</tns:quantity>
+    <tns:price>15</tns:price>
+    <tns:payment-status>pending</tns:payment-status>
+    <tns:duration>1</tns:duration>
+    <tns:date>2022-05-15</tns:date>
+  </tns:order-items>
+  
+  <tns:order-items item-id="id7">
+    <tns:details> E Resources</tns:details>
+    <tns:quantity>1</tns:quantity>
+    <tns:price>150</tns:price>
+    <tns:payment-status>pending</tns:payment-status>
+    <tns:duration>365</tns:duration>
+    <tns:date>2022-01-01</tns:date>
+  </tns:order-items>
+  
+</tns:global>
