@@ -3,7 +3,7 @@
 targetNamespace="http://www.example.org/paymentschema" 
 xmlns:tns="http://www.example.org/paymentschema" 
 elementFormDefault="qualified">
-
+<element name="global" type="tns:order-list"></element>
 <complexType name="order-list">
 	<sequence>
 		<element name="order-items" type="tns:items" minOccurs="1" maxOccurs="unbounded"></element>
@@ -30,5 +30,5 @@ elementFormDefault="qualified">
 		<minInclusive value="0"></minInclusive>
 	</restriction>
 </simpleType>
-<element name="global" type="tns:order-list"></element>
+
 </schema>

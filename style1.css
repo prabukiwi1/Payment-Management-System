@@ -545,3 +545,10 @@ a.tab-btn:hover{
     padding: 1px;
   }
 }
+
+.video{
+ display:flex;
+margin:0 auto;
+margin-bottom: 250px;
+justify-content: center;
+}
